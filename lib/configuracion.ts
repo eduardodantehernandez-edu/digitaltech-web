@@ -1,7 +1,7 @@
 export const DatosEmpresa = {
   nombre: "DigitalTech",
   direccion: "Alberti 965 - El Bolsón - Río Negro - Argentina",
-  telefono: "2944378038", // Reemplazá por el tuyo real
+  telefono: "5492944378038", // Reemplazá por el tuyo real
   email: "eduardodantehernandez@gmail.com",
   horario: "Lunes a Sabados de 09:00 a 20:00hs"
 };
