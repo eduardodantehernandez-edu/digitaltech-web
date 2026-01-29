@@ -128,7 +128,7 @@ export default function PresupuestadorPage() {
             </tbody>
           </table>
 
-          <Button onClick={agregarFila} variant="ghost" className="mt-4 text-[#0052cc] font-bold gap-2 no-print">
+          <Button onClick={agregarFila} variant="outline" className="mt-4 text-[#0052cc] font-bold gap-2 no-print">
             <Plus size={16} /> AGREGAR LÍNEA
           </Button>
 
