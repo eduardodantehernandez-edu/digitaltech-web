@@ -40,5 +40,10 @@ export const TrabajosRealizados = [
     titulo: "Mantenimiento Preventivo",
     descripcion: "Revisión general de sistemas de vigilancia.",
     imagen: "/trabajos/imagen7.jpeg"
+  },
+  {
+    titulo: "Torre de Telecomunicaciones",
+    descripcion: "Montaje de antenas en torre Ñorquinco.",
+    imagen: "/trabajos/imagen8.jpeg"
   }
 ];
