@@ -537,6 +537,12 @@ export default function LandingPage() {
               <p className="italic mb-6 text-blue-50">"Hicieron un enlace de Wi-Fi para mi campo y por fin tengo internet estable. Super recomendables en la zona."</p>
               <p className="font-bold text-[#ff6b00]">- Juan Eduardo T.</p>
             </div>
+            {/* Testimonio 4 */}
+            <div className="bg-white/10 p-8 rounded-3xl backdrop-blur-md border border-white/10 text-left">
+              <div className="text-[#ff6b00] text-2xl mb-4">★★★★★</div>
+              <p className="italic mb-6 text-blue-50">"Exelente servicio, tanto en la instalacion como en el post-venta. Recomendamos sus servicos."</p>
+              <p className="font-bold text-[#ff6b00]">- Amadeo Chacra Humus.</p>
+            </div>
           </div>
 
           <Button 
