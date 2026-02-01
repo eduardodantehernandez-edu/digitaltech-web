@@ -7,11 +7,14 @@ export async function POST(req: Request) {
     const { nombre, email, mensaje } = await req.json();
 
     // CONFIGURACIÓN DE TU CUENTA
-    const userEmail = "contacto@digitaltech.ar"; // <-- Poné tu dirección de Gmail
-    const userPass = "mghe xiek lwyt ialr";     // <-- Pegá acá las 16 letras de Google
+   // CONFIGURACIÓN DE TU CUENTA ZOHO
+    const userEmail = "contacto@digitaltech.ar"; 
+    const userPass = "Digital$26"; // La que usas para entrar a Zoho Mail
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: "smtppro.zoho.com",
+      port: 465,
+      secure: true, 
       auth: {
         user: userEmail,
         pass: userPass,
