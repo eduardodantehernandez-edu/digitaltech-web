@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     // CONFIGURACIÓN DE TU CUENTA
    // CONFIGURACIÓN DE TU CUENTA ZOHO
     const userEmail = "contacto@digitaltech.ar"; 
-    const userPass = "Digital$26"; // La que usas para entrar a Zoho Mail
+    const userPass = "5Q4XkcdW2Eti"; // La que usas para entrar a Zoho Mail
 
     const transporter = nodemailer.createTransport({
       host: "smtppro.zoho.com",
