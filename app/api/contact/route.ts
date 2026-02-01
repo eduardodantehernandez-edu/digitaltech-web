@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const { nombre, email, mensaje } = await req.json();
 
     // CONFIGURACIÓN DE TU CUENTA
-    const userEmail = "eduardodantehernandez@gmail.com"; // <-- Poné tu dirección de Gmail
+    const userEmail = "contacto@digitaltech.ar"; // <-- Poné tu dirección de Gmail
     const userPass = "mghe xiek lwyt ialr";     // <-- Pegá acá las 16 letras de Google
 
     const transporter = nodemailer.createTransport({
