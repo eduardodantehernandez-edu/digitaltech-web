@@ -14,10 +14,10 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       host: "smtppro.zoho.com",
       port: 465,
-      secure: true, 
+      secure: true, // Debe ser true para el puerto 465
       auth: {
-        user: userEmail,
-        pass: userPass,
+        user: "contacto@digitaltech.ar",
+        pass: "5Q4XkcdW2Eti", 
       },
     });
 
