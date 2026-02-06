@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSecure | El Futuro de la Seguridad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="logo">TECH<span>SECURE</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Trabajos</a></li>
+            <li><button onclick="toggleAdmin()" class="btn-admin"><i class="fas fa-cog"></i> ADMIN</button></li>
+        </ul>
+    </nav>
+
+    <div id="adminPanel" class="admin-drawer">
+        <h3>Panel de Control</h3>
+        <div class="admin-sec">
+            <p>Cargar al Carrusel Principal:</p>
+            <input type="file" id="inputSlider" accept="image/*">
+            <button onclick="handleUpload('slider')" class="btn-up">Subir al Inicio</button>
+        </div>
+        <div class="admin-sec">
+            <p>Cargar a Trabajos Realizados:</p>
+            <input type="file" id="inputGallery" accept="image/*">
+            <button onclick="handleUpload('gallery')" class="btn-up">Subir a Galería</button>
+        </div>
+        <button onclick="toggleAdmin()" class="btn-close">Cerrar</button>
+    </div>
+
+    <header id="inicio" class="hero">
+        <div id="mainSlider" class="slider-wrapper">
+            <div class="slide active" data-id="1">
+                <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1600&q=80">
+                <div class="hero-content"><h1>CCTV INTELIGENTE</h1><p>Vigilancia 4K para tu hogar o comercio.</p></div>
+            </div>
+            <div class="slide" data-id="2">
+                <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?auto=format&fit=crop&w=1600&q=80">
+                <div class="hero-content"><h1>ENLACES PUNTO A PUNTO</h1><p>Internet de alta velocidad en zonas rurales.</p></div>
+            </div>
+            <div class="slide" data-id="3">
+                <img src="https://images.unsplash.com/photo-1584652832942-87181f402093?auto=format&fit=crop&w=1600&q=80">
+                <div class="hero-content"><h1>SISTEMAS DE ALARMA</h1><p>Protección total controlada desde tu celular.</p></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="galeria" class="container">
+        <h2 class="title">TRABAJOS RECIENTES</h2>
+        <div id="galleryGrid" class="grid-galeria">
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
